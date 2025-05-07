@@ -1,0 +1,36 @@
+/* Estilos Básicos Seguros */
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* Animaciones que NO afectan funcionalidad */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.safe-animation {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Mejoras visuales seguras */
+.progress-bar {
+    transition: width 0.5s ease;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
